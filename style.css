@@ -5,9 +5,9 @@
 :root {
     --purple: rgb(149, 9, 137);
 }
-.main{
+/* .main{
     background-color: whitesmoke;
-}
+} */
 
 
 
@@ -46,13 +46,32 @@
     font-weight: 600;
     display: inline-block;
 }
-.circle-img {
-    background-color:  rgba(120, 0, 110, 0.396);
-    width: 300px; 
-    height: 300px;
-    border-radius: 50%; 
-    object-fit: contain; 
-    border:  2px solid black;
+.profile_picture{
+    background-image: url(./images/profile_pic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: rgba(149, 9, 137, 0.436);
+    height: 350px;
+    position: relative;
+    width: 345px;
+    border: 3px solid black;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
+    animation: profile_picture 8s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+
+@keyframes profile_picture{
+    0% {
+border-radius: 60% 40% 30% 70% / 60% 30% 80% 40%;
+}
+50% {
+border-radius: 30% 50% 70% 40% / 50% 40% 30% 60%;
+}
+100% {
+border-radius: 60% 40% 30% 70% / 60% 30% 80% 40%;
+}
 }
 
 
