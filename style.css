@@ -1,0 +1,119 @@
+*{
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    --purple: rgb(149, 9, 137);
+}
+.main{
+    background-color: whitesmoke;
+}
+
+
+
+
+
+/* navbar section*/
+#myNavBar{
+    position: fixed;
+}
+
+
+
+
+/* home section */
+#home{
+    padding-top: 100px;
+}
+#home h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+ h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+#home p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(237, 138, 228), rgb(149, 9, 137));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+}
+.circle-img {
+    background-color:  rgba(120, 0, 110, 0.396);
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    object-fit: contain; 
+    border:  2px solid black;
+}
+
+
+
+
+
+/* Skills and Technologies */
+#skills{
+    padding-top: 100px;
+}
+.skill{ /*to vertically align the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensures the container takes the full height */
+    transition: transform 0.4s ease;
+
+}
+.skill:hover{
+    transform: scale(1.5) ;
+}
+
+
+
+
+
+/* project section */
+#project{
+    padding-top: 100px;
+}
+.card{
+    transition: transform 0.4s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Contact Section */
+#contact{
+    padding-top: 100px;
+}
+.icon{
+    color: var(--purple);
+}
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--purple);
+    color: white;
+}
+#link a{
+    text-decoration: none;
+    color: white;
+}
