@@ -115,6 +115,16 @@ border-radius: 60% 40% 30% 70% / 60% 40% 80% 40%;
 }
 
 
+.row.d-flex {
+    gap: 50px; /* Adds spacing between cards */
+}
+
+@media (max-width: 768px) { /* sm breakpoint */
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 
 
